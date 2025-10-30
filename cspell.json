@@ -1,0 +1,18 @@
+{
+    "import" :"@cspell/dict-lorem-ipsum/cspell-ext.json",
+    "caseSensitive": false,
+    "dictionaries": ["kk-words"],
+    "dictionaryDefinitions": [
+        {
+            "name": "kk-words",
+            "path": "./.cspell/kk-words.txt",
+            "addWords": true
+        }
+    ],
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.git/**"
+    ]
+}

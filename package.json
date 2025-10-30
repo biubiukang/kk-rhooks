@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"{packages,apps}/**/*.{ts,tsx,js,jsx}\""
+    "lint": "eslint \"{packages,apps}/**/*.{ts,tsx,js,jsx}\"",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +32,11 @@
     "globals": "16.4.0",
     "prettier": "3.6.2",
     "eslint-plugin-prettier": "5.5.4",
-    "lint-staged": "16.2.6"
+    "lint-staged": "16.2.6",
+    "cspell": "9.2.2",
+    "commitlint": "20.1.0",
+    "commitizen": "4.3.1",
+    "cz-git": "1.12.0",
+    "husky": "9.1.7"
   }
 }
