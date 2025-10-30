@@ -1,0 +1,35 @@
+{
+  "name": "kk-rhooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"{packages,apps}/**/*.{ts,tsx,js,jsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {},
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --cache --write"
+    ],
+    "**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --cache --write --parser=typescript"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "9.35.0",
+    "@eslint/js": "9.35.0",
+    "typescript": "5.9.3",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "typescript-eslint": "8.46.2",
+    "globals": "16.4.0",
+    "prettier": "3.6.2",
+    "eslint-plugin-prettier": "5.5.4",
+    "lint-staged": "16.2.6"
+  }
+}
