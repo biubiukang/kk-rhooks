@@ -1,4 +1,4 @@
-import { defineConfig } from 'cz-git'
+const  { defineConfig } = require('cz-git')
 
 module.exports = defineConfig({
     rules: {
