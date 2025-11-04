@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "pnpm@8.6.0",
   "scripts": {
     "lint": "eslint \"{packages,apps}/**/*.{ts,tsx,js,jsx}\"",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "pnpm --filter=./packages/* test",
+    "test:cov": "cross-env REACT_MODE=strict pnpm --filter=./packages/* test:cov"
   },
   "config": {
     "commitizen": {
@@ -43,6 +48,16 @@
     "commitlint": "20.1.0",
     "commitizen": "4.3.1",
     "cz-git": "1.12.0",
-    "husky": "9.1.7"
+    "husky": "9.1.7",
+    "turbo": "2.5.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "vitest": "3.2.4",
+    "@vitest/coverage-istanbul": "3.2.4",
+    "jsdom": "27.1.0",
+    "@testing-library/react": "16.3.0",
+    "cross-env": "10.0.0"
   }
 }

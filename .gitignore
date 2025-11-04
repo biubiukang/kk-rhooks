@@ -1,4 +1,16 @@
 node_modules
-dist
 .DS_Store
+**/build
+**/doc_build
+**/dist
+**/es
+**/coverage
+
+.turbo
+
 .cspellcache
+
+pnpm-lock.yaml
+yarn.lock
+
+node_modules/

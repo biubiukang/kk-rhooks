@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "allowJs": false,
+        "module": "ESNext",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "jsx": "react-jsx",
+        "resolveJsonModule": true,
+        "moduleResolution": "bundler",
+        "skipLibCheck": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "paths": {
+            "@kk/*": [
+                "./packages/@kk/*/src"
+            ]
+        }
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "base",
+}
